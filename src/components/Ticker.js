@@ -56,9 +56,8 @@ export default function Ticker({ data }) {
             {Number(LAST_UPDATED_PRICE).toLocaleString()}
           </Text>
           {DAILY_CHANGE_DATA < 0 && DAILY_RELATIVE_CHANGE_DATA < 0 ? (
-            <Text style={{ color: "#01C095" }}>
-              {Math.abs(Number(DAILY_CHANGE_DATA).toFixed(2).toLocaleString())}
-              <GoTriangleDown /> (
+            <Text style={{ color: "#E44B44" }}>
+              {Math.abs(Number(DAILY_CHANGE_DATA).toFixed(2).toLocaleString())} <GoTriangleDown /> (
               {Math.abs(Number(DAILY_RELATIVE_CHANGE_DATA * 100).toFixed(2))}
               %)
             </Text>
